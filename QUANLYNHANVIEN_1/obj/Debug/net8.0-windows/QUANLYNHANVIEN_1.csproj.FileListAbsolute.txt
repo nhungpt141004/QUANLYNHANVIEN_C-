@@ -22,3 +22,4 @@ D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_
 D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormDoimatkhau.resources
 D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormNhanvien.resources
 D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormThongtin.resources
+D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.sourcelink.json

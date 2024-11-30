@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace QUANLYNHANVIEN_1
 {
-    public partial class FormChamcong : Form
+    public partial class FormMain1 : Form
     {
-        public FormChamcong()
+        public FormMain1()
         {
             InitializeComponent();
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            FormNhanvien FormMain = new FormNhanvien();
-            FormMain.Show();
-            this.Hide();
         }
     }
 }

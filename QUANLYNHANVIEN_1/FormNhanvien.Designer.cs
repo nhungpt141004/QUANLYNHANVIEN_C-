@@ -1,6 +1,6 @@
 ﻿namespace QUANLYNHANVIEN_1
 {
-    partial class FormMain
+    partial class FormNhanvien
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            panel1 = new Panel();
-            btnDangxuat = new Button();
-            btnThongtin = new Button();
-            btnTinhluong = new Button();
-            btnChamcong = new Button();
-            btnNhanvien = new Button();
-            pictureBox1 = new PictureBox();
             panel7 = new Panel();
             panel8 = new Panel();
+            btnBack = new Button();
             btnLoad = new Button();
             btnOutput = new Button();
             btnInput = new Button();
@@ -69,101 +62,10 @@
             btnSearch = new Button();
             txtSearch = new TextBox();
             ListSearch = new ComboBox();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel7.SuspendLayout();
             panel8.SuspendLayout();
             tbEmployee.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(btnDangxuat);
-            panel1.Controls.Add(btnThongtin);
-            panel1.Controls.Add(btnTinhluong);
-            panel1.Controls.Add(btnChamcong);
-            panel1.Controls.Add(btnNhanvien);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(277, 674);
-            panel1.TabIndex = 0;
-            // 
-            // btnDangxuat
-            // 
-            btnDangxuat.BackColor = Color.FromArgb(0, 102, 104);
-            btnDangxuat.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDangxuat.ForeColor = Color.White;
-            btnDangxuat.Location = new Point(33, 539);
-            btnDangxuat.Name = "btnDangxuat";
-            btnDangxuat.Size = new Size(211, 52);
-            btnDangxuat.TabIndex = 19;
-            btnDangxuat.Text = "Đăng xuất";
-            btnDangxuat.UseVisualStyleBackColor = false;
-            btnDangxuat.Click += btnDangxuat_Click;
-            // 
-            // btnThongtin
-            // 
-            btnThongtin.BackColor = Color.FromArgb(0, 102, 104);
-            btnThongtin.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnThongtin.ForeColor = Color.White;
-            btnThongtin.Location = new Point(33, 452);
-            btnThongtin.Name = "btnThongtin";
-            btnThongtin.Size = new Size(211, 52);
-            btnThongtin.TabIndex = 18;
-            btnThongtin.Text = "Thông tin";
-            btnThongtin.UseVisualStyleBackColor = false;
-            btnThongtin.Click += btnThongtin_Click;
-            // 
-            // btnTinhluong
-            // 
-            btnTinhluong.BackColor = Color.FromArgb(0, 102, 104);
-            btnTinhluong.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnTinhluong.ForeColor = Color.White;
-            btnTinhluong.Location = new Point(33, 370);
-            btnTinhluong.Name = "btnTinhluong";
-            btnTinhluong.Size = new Size(211, 52);
-            btnTinhluong.TabIndex = 17;
-            btnTinhluong.Text = "Tính lương";
-            btnTinhluong.UseVisualStyleBackColor = false;
-            btnTinhluong.Click += btnTinhluong_Click;
-            // 
-            // btnChamcong
-            // 
-            btnChamcong.BackColor = Color.FromArgb(0, 102, 104);
-            btnChamcong.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnChamcong.ForeColor = Color.White;
-            btnChamcong.Location = new Point(33, 280);
-            btnChamcong.Name = "btnChamcong";
-            btnChamcong.Size = new Size(211, 52);
-            btnChamcong.TabIndex = 16;
-            btnChamcong.Text = "Chấm công";
-            btnChamcong.UseVisualStyleBackColor = false;
-            btnChamcong.Click += btnChamcong_Click;
-            // 
-            // btnNhanvien
-            // 
-            btnNhanvien.BackColor = Color.FromArgb(0, 102, 104);
-            btnNhanvien.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnNhanvien.ForeColor = Color.White;
-            btnNhanvien.Location = new Point(33, 191);
-            btnNhanvien.Name = "btnNhanvien";
-            btnNhanvien.Size = new Size(211, 52);
-            btnNhanvien.TabIndex = 15;
-            btnNhanvien.Text = "Nhân viên";
-            btnNhanvien.UseVisualStyleBackColor = false;
-            btnNhanvien.Click += btnNhanvien_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(33, 29);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(211, 116);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // panel7
             // 
@@ -173,7 +75,7 @@
             panel7.Controls.Add(btnSearch);
             panel7.Controls.Add(txtSearch);
             panel7.Controls.Add(ListSearch);
-            panel7.Location = new Point(280, 1);
+            panel7.Location = new Point(0, 3);
             panel7.Name = "panel7";
             panel7.Size = new Size(993, 673);
             panel7.TabIndex = 1;
@@ -181,6 +83,7 @@
             // panel8
             // 
             panel8.BackColor = Color.FromArgb(0, 102, 104);
+            panel8.Controls.Add(btnBack);
             panel8.Controls.Add(btnLoad);
             panel8.Controls.Add(btnOutput);
             panel8.Controls.Add(btnInput);
@@ -206,10 +109,21 @@
             panel8.Size = new Size(990, 275);
             panel8.TabIndex = 4;
             // 
+            // btnBack
+            // 
+            btnBack.ForeColor = Color.FromArgb(0, 102, 104);
+            btnBack.Location = new Point(821, 215);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(112, 34);
+            btnBack.TabIndex = 20;
+            btnBack.Text = "Quay lại";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += button1_Click;
+            // 
             // btnLoad
             // 
             btnLoad.ForeColor = Color.FromArgb(0, 102, 104);
-            btnLoad.Location = new Point(843, 226);
+            btnLoad.Location = new Point(347, 215);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(112, 34);
             btnLoad.TabIndex = 19;
@@ -219,7 +133,7 @@
             // btnOutput
             // 
             btnOutput.ForeColor = Color.FromArgb(0, 102, 104);
-            btnOutput.Location = new Point(682, 226);
+            btnOutput.Location = new Point(194, 215);
             btnOutput.Name = "btnOutput";
             btnOutput.Size = new Size(112, 34);
             btnOutput.TabIndex = 18;
@@ -229,7 +143,7 @@
             // btnInput
             // 
             btnInput.ForeColor = Color.FromArgb(0, 102, 104);
-            btnInput.Location = new Point(522, 226);
+            btnInput.Location = new Point(45, 215);
             btnInput.Name = "btnInput";
             btnInput.Size = new Size(112, 34);
             btnInput.TabIndex = 17;
@@ -239,7 +153,7 @@
             // btnDelete
             // 
             btnDelete.ForeColor = Color.FromArgb(0, 102, 104);
-            btnDelete.Location = new Point(358, 226);
+            btnDelete.Location = new Point(347, 164);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(112, 34);
             btnDelete.TabIndex = 16;
@@ -249,7 +163,7 @@
             // btnUpdate
             // 
             btnUpdate.ForeColor = Color.FromArgb(0, 102, 104);
-            btnUpdate.Location = new Point(194, 226);
+            btnUpdate.Location = new Point(194, 164);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(112, 34);
             btnUpdate.TabIndex = 15;
@@ -259,7 +173,7 @@
             // btnAdd
             // 
             btnAdd.ForeColor = Color.FromArgb(0, 102, 104);
-            btnAdd.Location = new Point(35, 226);
+            btnAdd.Location = new Point(45, 164);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(112, 34);
             btnAdd.TabIndex = 14;
@@ -512,17 +426,14 @@
             ListSearch.Size = new Size(182, 33);
             ListSearch.TabIndex = 0;
             // 
-            // FormMain
+            // FormNhanvien
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1272, 673);
+            ClientSize = new Size(992, 673);
             Controls.Add(panel7);
-            Controls.Add(panel1);
-            Name = "FormMain";
+            Name = "FormNhanvien";
             Text = "FormMain";
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             panel8.ResumeLayout(false);
@@ -532,9 +443,6 @@
         }
 
         #endregion
-
-        private Panel panel1;
-        private PictureBox pictureBox1;
         private Panel lbDangxuat;
         private Label label5;
         private Panel lbThongtin;
@@ -576,10 +484,6 @@
         private Button btnDelete;
         private Button btnUpdate;
         private Button btnAdd;
-        private Button btnNhanvien;
-        private Button btnDangxuat;
-        private Button btnThongtin;
-        private Button btnTinhluong;
-        private Button btnChamcong;
+        private Button btnBack;
     }
 }

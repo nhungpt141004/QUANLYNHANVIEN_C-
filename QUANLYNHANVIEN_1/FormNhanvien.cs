@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QUANLYNHANVIEN_1
 {
-    public partial class FormMain : Form
+    public partial class FormNhanvien : Form
     {
-        public FormMain()
+        public FormNhanvien()
         {
             InitializeComponent();
         }
@@ -47,6 +47,11 @@ namespace QUANLYNHANVIEN_1
             FormLogin form = new FormLogin();
             form.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
