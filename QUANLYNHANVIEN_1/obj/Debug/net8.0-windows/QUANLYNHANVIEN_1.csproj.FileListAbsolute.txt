@@ -23,3 +23,28 @@ D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_
 D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormNhanvien.resources
 D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormThongtin.resources
 D:\c#\QUANLYNHANVIEN_1\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.sourcelink.json
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormChamcong.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormDoimatkhau.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormLogin.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormMain1.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormNhanvien.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormRegister.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormThongtin.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.FormTinhluong.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.Properties.Resources.resources
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.csproj.GenerateResource.cache
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.GeneratedMSBuildEditorConfig.editorconfig
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.AssemblyInfoInputs.cache
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.AssemblyInfo.cs
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.csproj.CoreCompileInputs.cache
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.sourcelink.json
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.dll
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\refint\QUANLYNHANVIEN_1.dll
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.pdb
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\QUANLYNHANVIEN_1.exe
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\QUANLYNHANVIEN_1.deps.json
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\QUANLYNHANVIEN_1.runtimeconfig.json
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\QUANLYNHANVIEN_1.dll
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\QUANLYNHANVIEN_1.pdb
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.genruntimeconfig.cache
+F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\ref\QUANLYNHANVIEN_1.dll

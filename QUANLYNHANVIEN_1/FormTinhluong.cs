@@ -19,7 +19,7 @@ namespace QUANLYNHANVIEN_1
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            FormMain FormMain = new FormMain();
+            FormMain1 FormMain = new FormMain1();
             FormMain.Show();
             this.Hide();
         }
