@@ -16,5 +16,12 @@ namespace QUANLYNHANVIEN_1
         {
             InitializeComponent();
         }
+
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
+            FormLogin formLogin = new FormLogin();
+            formLogin.ShowDialog();
+            this.Hide();
+        }
     }
 }
