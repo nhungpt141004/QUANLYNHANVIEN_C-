@@ -14,6 +14,14 @@
           }
         }
       },
+      "Enums.NET/4.0.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/Enums.NET.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
       "EPPlus/7.5.1": {
         "dependencies": {
           "EPPlus.System.Drawing": "7.5.0",
@@ -47,14 +55,6 @@
           "lib/net8.0/EPPlus.System.Drawing.dll": {
             "assemblyVersion": "7.5.0.0",
             "fileVersion": "7.5.0.0"
-          }
-        }
-      },
-      "Enums.NET/4.0.1": {
-        "runtime": {
-          "lib/netcoreapp3.0/Enums.NET.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.1.0"
           }
         }
       },
@@ -114,7 +114,6 @@
           }
         }
       },
-<<<<<<< HEAD
       "MathNet.Numerics.Signed/5.0.0": {
         "runtime": {
           "lib/net6.0/MathNet.Numerics.dll": {
@@ -123,12 +122,6 @@
           }
         }
       },
-      "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
-        "runtime": {
-          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-=======
       "Microsoft.Extensions.Configuration/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
@@ -226,7 +219,6 @@
           "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
             "assemblyVersion": "3.0.1.0",
             "fileVersion": "3.0.1.0"
->>>>>>> c6291a2466fb13e6fb824a81dfafaefa3e5b6f4b
           }
         }
       },
@@ -300,11 +292,11 @@
       },
       "NPOI/2.7.2": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.3.1",
+          "BouncyCastle.Cryptography": "2.4.0",
           "Enums.NET": "4.0.1",
           "ExtendedNumerics.BigDecimal": "2025.1001.2.129",
           "MathNet.Numerics.Signed": "5.0.0",
-          "Microsoft.IO.RecyclableMemoryStream": "3.0.0",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
           "SharpZipLib": "1.4.2",
           "SixLabors.Fonts": "1.0.1",
           "SixLabors.ImageSharp": "2.1.9",
@@ -618,6 +610,13 @@
       "path": "bouncycastle.cryptography/2.4.0",
       "hashPath": "bouncycastle.cryptography.2.4.0.nupkg.sha512"
     },
+    "Enums.NET/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OUGCd5L8zHZ61GAf436G0gf/H6yrSUkEpV5vm2CbCUuz9Rx7iLFLP5iHSSfmOtqNpuyo4vYte0CvYEmPZXRmRQ==",
+      "path": "enums.net/4.0.1",
+      "hashPath": "enums.net.4.0.1.nupkg.sha512"
+    },
     "EPPlus/7.5.1": {
       "type": "package",
       "serviceable": true,
@@ -638,13 +637,6 @@
       "sha512": "sha512-cgwstM12foFisisURUyxwJOWHMD/rZxPSyBXFsCOFayaKq0oKlOs1mCTueKNNIlpPDG1no9vcaQiJgZXFM4KPA==",
       "path": "epplus.system.drawing/7.5.0",
       "hashPath": "epplus.system.drawing.7.5.0.nupkg.sha512"
-    },
-    "Enums.NET/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OUGCd5L8zHZ61GAf436G0gf/H6yrSUkEpV5vm2CbCUuz9Rx7iLFLP5iHSSfmOtqNpuyo4vYte0CvYEmPZXRmRQ==",
-      "path": "enums.net/4.0.1",
-      "hashPath": "enums.net.4.0.1.nupkg.sha512"
     },
     "ExtendedNumerics.BigDecimal/2025.1001.2.129": {
       "type": "package",
@@ -688,7 +680,6 @@
       "path": "k4os.hash.xxhash/1.0.8",
       "hashPath": "k4os.hash.xxhash.1.0.8.nupkg.sha512"
     },
-<<<<<<< HEAD
     "MathNet.Numerics.Signed/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -696,13 +687,6 @@
       "path": "mathnet.numerics.signed/5.0.0",
       "hashPath": "mathnet.numerics.signed.5.0.0.nupkg.sha512"
     },
-    "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-irv0HuqoH8Ig5i2fO+8dmDNdFdsrO+DoQcedwIlb810qpZHBNQHZLW7C/AHBQDgLLpw2T96vmMAy/aE4Yj55Sg==",
-      "path": "microsoft.io.recyclablememorystream/3.0.0",
-      "hashPath": "microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512"
-=======
     "Microsoft.Extensions.Configuration/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -765,7 +749,6 @@
       "sha512": "sha512-s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g==",
       "path": "microsoft.io.recyclablememorystream/3.0.1",
       "hashPath": "microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512"
->>>>>>> c6291a2466fb13e6fb824a81dfafaefa3e5b6f4b
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

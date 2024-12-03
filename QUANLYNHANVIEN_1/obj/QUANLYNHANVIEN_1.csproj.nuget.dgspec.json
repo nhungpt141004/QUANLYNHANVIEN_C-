@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\A _Bai_Tap_Cuoi_Ky\\C#_Cuoi_Ky\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\QUANLYNHANVIEN_1.csproj": {}
+    "D:\\c#\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\QUANLYNHANVIEN_1.csproj": {}
   },
   "projects": {
-    "F:\\A _Bai_Tap_Cuoi_Ky\\C#_Cuoi_Ky\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\QUANLYNHANVIEN_1.csproj": {
+    "D:\\c#\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\QUANLYNHANVIEN_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\A _Bai_Tap_Cuoi_Ky\\C#_Cuoi_Ky\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\QUANLYNHANVIEN_1.csproj",
+        "projectUniqueName": "D:\\c#\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\QUANLYNHANVIEN_1.csproj",
         "projectName": "QUANLYNHANVIEN_1",
-        "projectPath": "F:\\A _Bai_Tap_Cuoi_Ky\\C#_Cuoi_Ky\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\QUANLYNHANVIEN_1.csproj",
-        "packagesPath": "C:\\Users\\nc120\\.nuget\\packages\\",
-        "outputPath": "F:\\A _Bai_Tap_Cuoi_Ky\\C#_Cuoi_Ky\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\obj\\",
+        "projectPath": "D:\\c#\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\QUANLYNHANVIEN_1.csproj",
+        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+        "outputPath": "D:\\c#\\QUANLYNHANVIEN_C-\\QUANLYNHANVIEN_1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nc120\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,9 +43,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -62,15 +62,13 @@
               "target": "Package",
               "version": "[9.1.0, )"
             },
-<<<<<<< HEAD
             "NPOI": {
               "target": "Package",
               "version": "[2.7.2, )"
-=======
+            },
             "iTextSharp": {
               "target": "Package",
               "version": "[5.5.13.4, )"
->>>>>>> c6291a2466fb13e6fb824a81dfafaefa3e5b6f4b
             }
           },
           "imports": [
@@ -92,7 +90,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -296,9 +296,6 @@ namespace QUANLYNHANVIEN_1
 
         }
 
-<<<<<<< HEAD
-
-=======
         //sửa nhân viên
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -564,7 +561,7 @@ namespace QUANLYNHANVIEN_1
                     // Lưu file Excel
                     var saveFileDialog = new SaveFileDialog
                     {
-                        Filter = "daubuoi.xlsx",
+                        Filter = "NhungChuChe.xlsx",//Cai nay thang duc anh ghi. No bố láo quá
                         Title = "Save an Excel File"
                     };
 
@@ -588,7 +585,6 @@ namespace QUANLYNHANVIEN_1
             formMain1.ShowDialog();
             this.Hide();
         }
->>>>>>> c6291a2466fb13e6fb824a81dfafaefa3e5b6f4b
     }
 }
 
