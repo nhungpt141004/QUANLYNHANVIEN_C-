@@ -24,5 +24,9 @@ namespace QUANLYNHANVIEN_1
             this.Hide();
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

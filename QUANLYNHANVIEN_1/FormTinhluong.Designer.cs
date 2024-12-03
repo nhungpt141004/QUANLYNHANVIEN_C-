@@ -31,14 +31,6 @@
             ListSearch = new ComboBox();
             txtSearch = new TextBox();
             btnSearch = new Button();
-            tbTinhluong = new TableLayoutPanel();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label8 = new Label();
-            label12 = new Label();
             panel1 = new Panel();
             btnBack = new Button();
             btnLoad = new Button();
@@ -53,8 +45,16 @@
             label2 = new Label();
             label1 = new Label();
             label13 = new Label();
-            tbTinhluong.SuspendLayout();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // ListSearch
@@ -85,104 +85,6 @@
             btnSearch.TabIndex = 4;
             btnSearch.Text = "Tìm kiếm";
             btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // tbTinhluong
-            // 
-            tbTinhluong.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            tbTinhluong.ColumnCount = 7;
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.2417564F));
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.75824F));
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 131F));
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 141F));
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 139F));
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 136F));
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 133F));
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tbTinhluong.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tbTinhluong.Controls.Add(label11, 5, 0);
-            tbTinhluong.Controls.Add(label10, 4, 0);
-            tbTinhluong.Controls.Add(label9, 3, 0);
-            tbTinhluong.Controls.Add(label7, 1, 0);
-            tbTinhluong.Controls.Add(label6, 0, 0);
-            tbTinhluong.Controls.Add(label8, 2, 0);
-            tbTinhluong.Controls.Add(label12, 6, 0);
-            tbTinhluong.Location = new Point(43, 92);
-            tbTinhluong.Name = "tbTinhluong";
-            tbTinhluong.RowCount = 2;
-            tbTinhluong.RowStyles.Add(new RowStyle(SizeType.Percent, 20.3571434F));
-            tbTinhluong.RowStyles.Add(new RowStyle(SizeType.Percent, 79.64286F));
-            tbTinhluong.Size = new Size(899, 245);
-            tbTinhluong.TabIndex = 5;
-            // 
-            // label11
-            // 
-            label11.Location = new Point(630, 1);
-            label11.Name = "label11";
-            label11.RightToLeft = RightToLeft.No;
-            label11.Size = new Size(130, 49);
-            label11.TabIndex = 5;
-            label11.Text = "Thưởng";
-            label11.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            label10.Location = new Point(490, 1);
-            label10.Name = "label10";
-            label10.RightToLeft = RightToLeft.No;
-            label10.Size = new Size(133, 49);
-            label10.TabIndex = 4;
-            label10.Text = "Lương cơ bản";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            label9.Location = new Point(348, 1);
-            label9.Name = "label9";
-            label9.RightToLeft = RightToLeft.No;
-            label9.Size = new Size(135, 49);
-            label9.TabIndex = 3;
-            label9.Text = "Ngày nghỉ";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            label7.Location = new Point(75, 1);
-            label7.Name = "label7";
-            label7.RightToLeft = RightToLeft.No;
-            label7.Size = new Size(134, 49);
-            label7.TabIndex = 1;
-            label7.Text = "Mã nhân viên";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            label6.Location = new Point(4, 1);
-            label6.Name = "label6";
-            label6.RightToLeft = RightToLeft.No;
-            label6.Size = new Size(64, 49);
-            label6.TabIndex = 0;
-            label6.Text = "STT";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            label8.Location = new Point(216, 1);
-            label8.Name = "label8";
-            label8.RightToLeft = RightToLeft.No;
-            label8.Size = new Size(125, 49);
-            label8.TabIndex = 2;
-            label8.Text = "Tháng";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            label12.Location = new Point(767, 1);
-            label12.Name = "label12";
-            label12.RightToLeft = RightToLeft.No;
-            label12.Size = new Size(128, 49);
-            label12.TabIndex = 6;
-            label12.Text = "Lương tổng";
-            label12.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -324,22 +226,83 @@
             label13.TabIndex = 1;
             label13.Text = "Mã nhân viên";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
+            dataGridView1.Location = new Point(29, 96);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(933, 225);
+            dataGridView1.TabIndex = 7;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "STT";
+            Column1.MinimumWidth = 8;
+            Column1.Name = "Column1";
+            Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            Column2.HeaderText = "Mã nhân viên";
+            Column2.MinimumWidth = 8;
+            Column2.Name = "Column2";
+            Column2.Width = 154;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Tháng";
+            Column3.MinimumWidth = 8;
+            Column3.Name = "Column3";
+            Column3.Width = 80;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Ngày nghỉ";
+            Column4.MinimumWidth = 8;
+            Column4.Name = "Column4";
+            Column4.Width = 130;
+            // 
+            // Column5
+            // 
+            Column5.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            Column5.HeaderText = "Lương cơ bản";
+            Column5.MinimumWidth = 8;
+            Column5.Name = "Column5";
+            Column5.Width = 158;
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "Thưởng";
+            Column6.MinimumWidth = 8;
+            Column6.Name = "Column6";
+            Column6.Width = 150;
+            // 
+            // Column7
+            // 
+            Column7.HeaderText = "Tổng lương";
+            Column7.MinimumWidth = 8;
+            Column7.Name = "Column7";
+            Column7.Width = 150;
+            // 
             // FormTinhluong
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(994, 609);
+            Controls.Add(dataGridView1);
             Controls.Add(panel1);
-            Controls.Add(tbTinhluong);
             Controls.Add(btnSearch);
             Controls.Add(txtSearch);
             Controls.Add(ListSearch);
             Name = "FormTinhluong";
             Text = "FormTinhluong";
-            tbTinhluong.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -349,14 +312,6 @@
         private ComboBox ListSearch;
         private TextBox txtSearch;
         private Button btnSearch;
-        private TableLayoutPanel tbTinhluong;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label7;
-        private Label label6;
-        private Label label8;
         private Panel panel1;
         private TextBox txtID;
         private TextBox txtMonth;
@@ -371,5 +326,13 @@
         private Button btbTinhluong;
         private Button btnLoad;
         private Button btnBack;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
     }
 }

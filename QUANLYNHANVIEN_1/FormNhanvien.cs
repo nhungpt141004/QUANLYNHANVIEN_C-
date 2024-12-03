@@ -561,7 +561,7 @@ namespace QUANLYNHANVIEN_1
                     // Lưu file Excel
                     var saveFileDialog = new SaveFileDialog
                     {
-                        Filter = "daubuoi.xlsx",
+                        Filter = "NhungChuChe.xlsx",//Cai nay thang duc anh ghi. No bố láo quá
                         Title = "Save an Excel File"
                     };
 
