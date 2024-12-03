@@ -50,33 +50,8 @@ namespace QUANLYNHANVIEN_1
 
                 if (string.IsNullOrEmpty(usernameOrEmail) || string.IsNullOrEmpty(password))
                 {
-<<<<<<< HEAD
                     ShowMessage("Tài khoản và mật khẩu không được để trống!");
                     return;
-=======
-                    // Thêm tham số để tránh SQL Injection
-                    cmd.Parameters.AddWithValue("@input", input);
-                    cmd.Parameters.AddWithValue("@password", password);
-
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read()) // Nếu tìm thấy tài khoản
-                        {
-                            MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            // Hiển thị form main
-                            FormMain1 formmain1 = new FormMain1();
-                            formmain1.ShowDialog();
-
-                            // Ẩn form đăng nhập hiện tại
-                            this.Hide();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Tên tài khoản hoặc mật khẩu không chính xác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
->>>>>>> c6291a2466fb13e6fb824a81dfafaefa3e5b6f4b
                 }
 
                 string hashedPassword = HashPassword.hashPassword(password);

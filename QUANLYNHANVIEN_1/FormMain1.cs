@@ -23,9 +23,6 @@ namespace QUANLYNHANVIEN_1
             formLogin.Show();
             this.Hide();
         }
-
-<<<<<<< HEAD
-=======
         private void btnEmployee_Click(object sender, EventArgs e)
         {
             FormNhanvien formNhanvien = new FormNhanvien();
@@ -42,8 +39,8 @@ namespace QUANLYNHANVIEN_1
 
         private void btnThongtin_Click(object sender, EventArgs e)
         {
-            FormThongtin formThongtin = new FormThongtin();
-            formThongtin.ShowDialog();
+            About formAbout = new About();
+            formAbout.ShowDialog();
             this.Hide();
         }
 
@@ -53,6 +50,6 @@ namespace QUANLYNHANVIEN_1
             formtinhluong.ShowDialog();
             this.Hide();
         }
->>>>>>> c6291a2466fb13e6fb824a81dfafaefa3e5b6f4b
+
     }
 }
