@@ -88,6 +88,7 @@ D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\runtimes\win-x64\
 D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNHANVIEN_1.csproj.AssemblyReference.cache
 D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\obj\Debug\net8.0-windows\QUANLYNH.3D9A5240.Up2Date
+<<<<<<< HEAD
 F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
 F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Google.Protobuf.dll
 F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
@@ -117,3 +118,21 @@ F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\ne
 F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
 F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\System.Security.Cryptography.Xml.dll
 F:\A _Bai_Tap_Cuoi_Ky\C#_Cuoi_Ky\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+=======
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\EPPlus.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\EPPlus.Interfaces.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\EPPlus.System.Drawing.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\QUANLYNHANVIEN_C-\QUANLYNHANVIEN_1\bin\Debug\net8.0-windows\itextsharp.dll
+>>>>>>> c6291a2466fb13e6fb824a81dfafaefa3e5b6f4b
