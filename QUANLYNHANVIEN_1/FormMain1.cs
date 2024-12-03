@@ -23,5 +23,33 @@ namespace QUANLYNHANVIEN_1
             formLogin.ShowDialog();
             this.Hide();
         }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            FormNhanvien formNhanvien = new FormNhanvien();
+            formNhanvien.ShowDialog();
+            this.Hide();
+        }
+
+        private void btnChamcong_Click(object sender, EventArgs e)
+        {
+            FormChamcong formChamcong = new FormChamcong();
+            formChamcong.ShowDialog();
+            this.Hide();
+        }
+
+        private void btnThongtin_Click(object sender, EventArgs e)
+        {
+            FormThongtin formThongtin = new FormThongtin();
+            formThongtin.ShowDialog();
+            this.Hide();
+        }
+
+        private void btnTinhluong_Click(object sender, EventArgs e)
+        {
+            FormTinhluong formtinhluong= new FormTinhluong();
+            formtinhluong.ShowDialog();
+            this.Hide();
+        }
     }
 }

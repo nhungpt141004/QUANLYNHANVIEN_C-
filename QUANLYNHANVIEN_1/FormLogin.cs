@@ -58,9 +58,9 @@ namespace QUANLYNHANVIEN_1
                         {
                             MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            // Hiển thị form nhân viên
-                            FormNhanvien formnv = new FormNhanvien();
-                            formnv.ShowDialog();
+                            // Hiển thị form main
+                            FormMain1 formmain1 = new FormMain1();
+                            formmain1.ShowDialog();
 
                             // Ẩn form đăng nhập hiện tại
                             this.Hide();

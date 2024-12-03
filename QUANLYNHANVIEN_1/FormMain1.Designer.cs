@@ -49,7 +49,7 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(pictureBox1);
             panel2.Location = new Point(2, 1);
-            panel2.Margin = new Padding(2, 2, 2, 2);
+            panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
             panel2.Size = new Size(652, 126);
             panel2.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.Location = new Point(17, 16);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(169, 93);
             pictureBox1.TabIndex = 0;
@@ -94,12 +94,13 @@
             btnEmployee.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEmployee.ForeColor = Color.White;
             btnEmployee.Location = new Point(99, 170);
-            btnEmployee.Margin = new Padding(2, 2, 2, 2);
+            btnEmployee.Margin = new Padding(2);
             btnEmployee.Name = "btnEmployee";
             btnEmployee.Size = new Size(139, 68);
             btnEmployee.TabIndex = 3;
             btnEmployee.Text = "NHÂN VIÊN";
             btnEmployee.UseVisualStyleBackColor = false;
+            btnEmployee.Click += btnEmployee_Click;
             // 
             // btnChamcong
             // 
@@ -107,12 +108,13 @@
             btnChamcong.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnChamcong.ForeColor = Color.White;
             btnChamcong.Location = new Point(398, 170);
-            btnChamcong.Margin = new Padding(2, 2, 2, 2);
+            btnChamcong.Margin = new Padding(2);
             btnChamcong.Name = "btnChamcong";
             btnChamcong.Size = new Size(139, 68);
             btnChamcong.TabIndex = 4;
             btnChamcong.Text = "CHẤM CÔNG";
             btnChamcong.UseVisualStyleBackColor = false;
+            btnChamcong.Click += btnChamcong_Click;
             // 
             // btnTinhluong
             // 
@@ -120,12 +122,13 @@
             btnTinhluong.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnTinhluong.ForeColor = Color.White;
             btnTinhluong.Location = new Point(99, 286);
-            btnTinhluong.Margin = new Padding(2, 2, 2, 2);
+            btnTinhluong.Margin = new Padding(2);
             btnTinhluong.Name = "btnTinhluong";
             btnTinhluong.Size = new Size(139, 68);
             btnTinhluong.TabIndex = 5;
             btnTinhluong.Text = "TÍNH LƯƠNG";
             btnTinhluong.UseVisualStyleBackColor = false;
+            btnTinhluong.Click += btnTinhluong_Click;
             // 
             // btnThongtin
             // 
@@ -133,12 +136,13 @@
             btnThongtin.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnThongtin.ForeColor = Color.White;
             btnThongtin.Location = new Point(398, 286);
-            btnThongtin.Margin = new Padding(2, 2, 2, 2);
+            btnThongtin.Margin = new Padding(2);
             btnThongtin.Name = "btnThongtin";
             btnThongtin.Size = new Size(139, 68);
             btnThongtin.TabIndex = 6;
             btnThongtin.Text = "THÔNG TIN";
             btnThongtin.UseVisualStyleBackColor = false;
+            btnThongtin.Click += btnThongtin_Click;
             // 
             // btnDangxuat
             // 
@@ -146,7 +150,7 @@
             btnDangxuat.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDangxuat.ForeColor = Color.White;
             btnDangxuat.Location = new Point(262, 380);
-            btnDangxuat.Margin = new Padding(2, 2, 2, 2);
+            btnDangxuat.Margin = new Padding(2);
             btnDangxuat.Name = "btnDangxuat";
             btnDangxuat.Size = new Size(106, 39);
             btnDangxuat.TabIndex = 14;
@@ -166,7 +170,7 @@
             Controls.Add(btnChamcong);
             Controls.Add(btnEmployee);
             Controls.Add(panel2);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormMain1";
             Text = "ForMain1";
             panel2.ResumeLayout(false);

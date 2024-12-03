@@ -29,7 +29,16 @@
         private void InitializeComponent()
         {
             panel7 = new Panel();
+            tbEmployee = new DataGridView();
+            employee_id = new DataGridViewTextBoxColumn();
+            full_name = new DataGridViewTextBoxColumn();
+            email = new DataGridViewTextBoxColumn();
+            phone_number = new DataGridViewTextBoxColumn();
+            address = new DataGridViewTextBoxColumn();
+            date_of_birth = new DataGridViewTextBoxColumn();
+            role_id = new DataGridViewTextBoxColumn();
             panel8 = new Panel();
+            dtpDateofBirth = new DateTimePicker();
             btnBack = new Button();
             btnLoad = new Button();
             btnOutput = new Button();
@@ -37,52 +46,108 @@
             btnDelete = new Button();
             btnUpdate = new Button();
             btnAdd = new Button();
-            txtRole = new TextBox();
-            txtDateofBirth = new TextBox();
             txtAddress = new TextBox();
             txtPhone = new TextBox();
             txtEmail = new TextBox();
             txtName = new TextBox();
             txtID = new TextBox();
-            label19 = new Label();
             label18 = new Label();
             label17 = new Label();
             label16 = new Label();
             label15 = new Label();
             label14 = new Label();
             label13 = new Label();
-            tbEmployee = new TableLayoutPanel();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label8 = new Label();
             btnSearch = new Button();
             txtSearch = new TextBox();
-            ListSearch = new ComboBox();
             panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)tbEmployee).BeginInit();
             panel8.SuspendLayout();
-            tbEmployee.SuspendLayout();
             SuspendLayout();
             // 
             // panel7
             // 
             panel7.BackColor = Color.White;
-            panel7.Controls.Add(panel8);
             panel7.Controls.Add(tbEmployee);
+            panel7.Controls.Add(panel8);
             panel7.Controls.Add(btnSearch);
             panel7.Controls.Add(txtSearch);
-            panel7.Controls.Add(ListSearch);
-            panel7.Location = new Point(0, 3);
+            panel7.Location = new Point(0, 2);
+            panel7.Margin = new Padding(2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(993, 673);
+            panel7.Size = new Size(790, 538);
             panel7.TabIndex = 1;
+            // 
+            // tbEmployee
+            // 
+            tbEmployee.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            tbEmployee.Columns.AddRange(new DataGridViewColumn[] { employee_id, full_name, email, phone_number, address, date_of_birth, role_id });
+            tbEmployee.Location = new Point(3, 58);
+            tbEmployee.Name = "tbEmployee";
+            tbEmployee.RowHeadersWidth = 51;
+            tbEmployee.Size = new Size(788, 237);
+            tbEmployee.TabIndex = 5;
+            tbEmployee.CellContentClick += tbEmployee_CellContentClick;
+            // 
+            // employee_id
+            // 
+            employee_id.DataPropertyName = "employee_id";
+            employee_id.HeaderText = "ID";
+            employee_id.MinimumWidth = 6;
+            employee_id.Name = "employee_id";
+            employee_id.Width = 125;
+            // 
+            // full_name
+            // 
+            full_name.DataPropertyName = "full_name";
+            full_name.HeaderText = "Column2";
+            full_name.MinimumWidth = 6;
+            full_name.Name = "full_name";
+            full_name.Width = 125;
+            // 
+            // email
+            // 
+            email.DataPropertyName = "email";
+            email.HeaderText = "Column3";
+            email.MinimumWidth = 6;
+            email.Name = "email";
+            email.Width = 125;
+            // 
+            // phone_number
+            // 
+            phone_number.DataPropertyName = "phone_number";
+            phone_number.HeaderText = "Column4";
+            phone_number.MinimumWidth = 6;
+            phone_number.Name = "phone_number";
+            phone_number.Width = 125;
+            // 
+            // address
+            // 
+            address.DataPropertyName = "address";
+            address.HeaderText = "Column5";
+            address.MinimumWidth = 6;
+            address.Name = "address";
+            address.Width = 125;
+            // 
+            // date_of_birth
+            // 
+            date_of_birth.DataPropertyName = "date_of_birth";
+            date_of_birth.HeaderText = "Column6";
+            date_of_birth.MinimumWidth = 6;
+            date_of_birth.Name = "date_of_birth";
+            date_of_birth.Width = 125;
+            // 
+            // role_id
+            // 
+            role_id.DataPropertyName = "role_id";
+            role_id.HeaderText = "Column1";
+            role_id.MinimumWidth = 6;
+            role_id.Name = "role_id";
+            role_id.Width = 125;
             // 
             // panel8
             // 
             panel8.BackColor = Color.FromArgb(0, 102, 104);
+            panel8.Controls.Add(dtpDateofBirth);
             panel8.Controls.Add(btnBack);
             panel8.Controls.Add(btnLoad);
             panel8.Controls.Add(btnOutput);
@@ -90,162 +155,163 @@
             panel8.Controls.Add(btnDelete);
             panel8.Controls.Add(btnUpdate);
             panel8.Controls.Add(btnAdd);
-            panel8.Controls.Add(txtRole);
-            panel8.Controls.Add(txtDateofBirth);
             panel8.Controls.Add(txtAddress);
             panel8.Controls.Add(txtPhone);
             panel8.Controls.Add(txtEmail);
             panel8.Controls.Add(txtName);
             panel8.Controls.Add(txtID);
-            panel8.Controls.Add(label19);
             panel8.Controls.Add(label18);
             panel8.Controls.Add(label17);
             panel8.Controls.Add(label16);
             panel8.Controls.Add(label15);
             panel8.Controls.Add(label14);
             panel8.Controls.Add(label13);
-            panel8.Location = new Point(3, 398);
+            panel8.Location = new Point(2, 318);
+            panel8.Margin = new Padding(2);
             panel8.Name = "panel8";
-            panel8.Size = new Size(990, 275);
+            panel8.Size = new Size(789, 220);
             panel8.TabIndex = 4;
+            // 
+            // dtpDateofBirth
+            // 
+            dtpDateofBirth.Location = new Point(546, 90);
+            dtpDateofBirth.Name = "dtpDateofBirth";
+            dtpDateofBirth.Size = new Size(202, 27);
+            dtpDateofBirth.TabIndex = 21;
+            dtpDateofBirth.Value = new DateTime(2024, 12, 18, 0, 0, 0, 0);
             // 
             // btnBack
             // 
             btnBack.ForeColor = Color.FromArgb(0, 102, 104);
-            btnBack.Location = new Point(821, 215);
+            btnBack.Location = new Point(657, 172);
+            btnBack.Margin = new Padding(2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(112, 34);
+            btnBack.Size = new Size(90, 27);
             btnBack.TabIndex = 20;
             btnBack.Text = "Quay lại";
             btnBack.UseVisualStyleBackColor = true;
-            btnBack.Click += button1_Click;
+            btnBack.Click += btnBack_Click;
             // 
             // btnLoad
             // 
             btnLoad.ForeColor = Color.FromArgb(0, 102, 104);
-            btnLoad.Location = new Point(347, 215);
+            btnLoad.Location = new Point(278, 172);
+            btnLoad.Margin = new Padding(2);
             btnLoad.Name = "btnLoad";
-            btnLoad.Size = new Size(112, 34);
+            btnLoad.Size = new Size(90, 27);
             btnLoad.TabIndex = 19;
             btnLoad.Text = "Làm mới";
             btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
             // 
             // btnOutput
             // 
             btnOutput.ForeColor = Color.FromArgb(0, 102, 104);
-            btnOutput.Location = new Point(194, 215);
+            btnOutput.Location = new Point(155, 172);
+            btnOutput.Margin = new Padding(2);
             btnOutput.Name = "btnOutput";
-            btnOutput.Size = new Size(112, 34);
+            btnOutput.Size = new Size(90, 27);
             btnOutput.TabIndex = 18;
             btnOutput.Text = "Xuất EXEL";
             btnOutput.UseVisualStyleBackColor = true;
+            btnOutput.Click += btnOutput_Click;
             // 
             // btnInput
             // 
             btnInput.ForeColor = Color.FromArgb(0, 102, 104);
-            btnInput.Location = new Point(45, 215);
+            btnInput.Location = new Point(36, 172);
+            btnInput.Margin = new Padding(2);
             btnInput.Name = "btnInput";
-            btnInput.Size = new Size(112, 34);
+            btnInput.Size = new Size(90, 27);
             btnInput.TabIndex = 17;
             btnInput.Text = "Nhập EXEL";
             btnInput.UseVisualStyleBackColor = true;
+            btnInput.Click += btnInput_Click;
             // 
             // btnDelete
             // 
             btnDelete.ForeColor = Color.FromArgb(0, 102, 104);
-            btnDelete.Location = new Point(347, 164);
+            btnDelete.Location = new Point(278, 131);
+            btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(112, 34);
+            btnDelete.Size = new Size(90, 27);
             btnDelete.TabIndex = 16;
             btnDelete.Text = "Xóa";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnUpdate
             // 
             btnUpdate.ForeColor = Color.FromArgb(0, 102, 104);
-            btnUpdate.Location = new Point(194, 164);
+            btnUpdate.Location = new Point(155, 131);
+            btnUpdate.Margin = new Padding(2);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(112, 34);
+            btnUpdate.Size = new Size(90, 27);
             btnUpdate.TabIndex = 15;
             btnUpdate.Text = "Sửa";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnAdd
             // 
             btnAdd.ForeColor = Color.FromArgb(0, 102, 104);
-            btnAdd.Location = new Point(45, 164);
+            btnAdd.Location = new Point(36, 131);
+            btnAdd.Margin = new Padding(2);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(112, 34);
+            btnAdd.Size = new Size(90, 27);
             btnAdd.TabIndex = 14;
             btnAdd.Text = "Thêm";
             btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // txtRole
-            // 
-            txtRole.Location = new Point(682, 161);
-            txtRole.Name = "txtRole";
-            txtRole.Size = new Size(251, 31);
-            txtRole.TabIndex = 13;
-            // 
-            // txtDateofBirth
-            // 
-            txtDateofBirth.Location = new Point(682, 113);
-            txtDateofBirth.Name = "txtDateofBirth";
-            txtDateofBirth.Size = new Size(251, 31);
-            txtDateofBirth.TabIndex = 12;
+            btnAdd.Click += btnAdd_Click;
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(682, 65);
+            txtAddress.Location = new Point(546, 52);
+            txtAddress.Margin = new Padding(2);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(251, 31);
+            txtAddress.Size = new Size(202, 27);
             txtAddress.TabIndex = 11;
             // 
             // txtPhone
             // 
-            txtPhone.Location = new Point(682, 18);
+            txtPhone.Location = new Point(546, 14);
+            txtPhone.Margin = new Padding(2);
             txtPhone.Name = "txtPhone";
-            txtPhone.Size = new Size(251, 31);
+            txtPhone.Size = new Size(202, 27);
             txtPhone.TabIndex = 10;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(178, 113);
+            txtEmail.Location = new Point(142, 90);
+            txtEmail.Margin = new Padding(2);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(267, 31);
+            txtEmail.Size = new Size(214, 27);
             txtEmail.TabIndex = 9;
             // 
             // txtName
             // 
-            txtName.Location = new Point(178, 65);
+            txtName.Location = new Point(142, 52);
+            txtName.Margin = new Padding(2);
             txtName.Name = "txtName";
-            txtName.Size = new Size(267, 31);
+            txtName.Size = new Size(214, 27);
             txtName.TabIndex = 8;
             // 
             // txtID
             // 
-            txtID.Location = new Point(178, 21);
+            txtID.Location = new Point(142, 17);
+            txtID.Margin = new Padding(2);
             txtID.Name = "txtID";
-            txtID.Size = new Size(267, 31);
+            txtID.Size = new Size(214, 27);
             txtID.TabIndex = 7;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(531, 164);
-            label19.Name = "label19";
-            label19.Size = new Size(76, 25);
-            label19.TabIndex = 6;
-            label19.Text = "Chức vụ";
             // 
             // label18
             // 
             label18.AutoSize = true;
             label18.ForeColor = Color.White;
-            label18.Location = new Point(531, 113);
+            label18.Location = new Point(425, 90);
+            label18.Margin = new Padding(2, 0, 2, 0);
             label18.Name = "label18";
-            label18.Size = new Size(91, 25);
+            label18.Size = new Size(74, 20);
             label18.TabIndex = 5;
             label18.Text = "Ngày sinh";
             // 
@@ -253,9 +319,10 @@
             // 
             label17.AutoSize = true;
             label17.ForeColor = Color.White;
-            label17.Location = new Point(531, 68);
+            label17.Location = new Point(425, 54);
+            label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
-            label17.Size = new Size(65, 25);
+            label17.Size = new Size(55, 20);
             label17.TabIndex = 4;
             label17.Text = "Địa chỉ";
             // 
@@ -263,9 +330,10 @@
             // 
             label16.AutoSize = true;
             label16.ForeColor = Color.White;
-            label16.Location = new Point(531, 21);
+            label16.Location = new Point(425, 17);
+            label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
-            label16.Size = new Size(117, 25);
+            label16.Size = new Size(97, 20);
             label16.TabIndex = 3;
             label16.Text = "Số điện thoại";
             // 
@@ -273,9 +341,10 @@
             // 
             label15.AutoSize = true;
             label15.ForeColor = Color.White;
-            label15.Location = new Point(45, 113);
+            label15.Location = new Point(36, 90);
+            label15.Margin = new Padding(2, 0, 2, 0);
             label15.Name = "label15";
-            label15.Size = new Size(54, 25);
+            label15.Size = new Size(46, 20);
             label15.TabIndex = 2;
             label15.Text = "Email";
             // 
@@ -283,9 +352,10 @@
             // 
             label14.AutoSize = true;
             label14.ForeColor = Color.White;
-            label14.Location = new Point(45, 65);
+            label14.Location = new Point(36, 52);
+            label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(89, 25);
+            label14.Size = new Size(73, 20);
             label14.TabIndex = 1;
             label14.Text = "Họ và tên";
             // 
@@ -293,152 +363,50 @@
             // 
             label13.AutoSize = true;
             label13.ForeColor = Color.White;
-            label13.Location = new Point(45, 21);
+            label13.Location = new Point(36, 17);
+            label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(118, 25);
+            label13.Size = new Size(97, 20);
             label13.TabIndex = 0;
             label13.Text = "Mã nhân viên";
-            // 
-            // tbEmployee
-            // 
-            tbEmployee.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            tbEmployee.ColumnCount = 7;
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.2417564F));
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.75824F));
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 178F));
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 114F));
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 115F));
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 106F));
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 108F));
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tbEmployee.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tbEmployee.Controls.Add(label12, 6, 0);
-            tbEmployee.Controls.Add(label11, 5, 0);
-            tbEmployee.Controls.Add(label10, 4, 0);
-            tbEmployee.Controls.Add(label9, 3, 0);
-            tbEmployee.Controls.Add(label7, 1, 0);
-            tbEmployee.Controls.Add(label6, 0, 0);
-            tbEmployee.Controls.Add(label8, 2, 0);
-            tbEmployee.Location = new Point(48, 102);
-            tbEmployee.Name = "tbEmployee";
-            tbEmployee.RowCount = 2;
-            tbEmployee.RowStyles.Add(new RowStyle(SizeType.Percent, 20.3571434F));
-            tbEmployee.RowStyles.Add(new RowStyle(SizeType.Percent, 79.64286F));
-            tbEmployee.Size = new Size(892, 266);
-            tbEmployee.TabIndex = 3;
-            // 
-            // label12
-            // 
-            label12.Location = new Point(785, 1);
-            label12.Name = "label12";
-            label12.RightToLeft = RightToLeft.No;
-            label12.Size = new Size(103, 53);
-            label12.TabIndex = 6;
-            label12.Text = "Chức vụ";
-            label12.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            label11.Location = new Point(678, 1);
-            label11.Name = "label11";
-            label11.RightToLeft = RightToLeft.No;
-            label11.Size = new Size(100, 53);
-            label11.TabIndex = 5;
-            label11.Text = "Ngày sinh";
-            label11.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            label10.Location = new Point(562, 1);
-            label10.Name = "label10";
-            label10.RightToLeft = RightToLeft.No;
-            label10.Size = new Size(108, 53);
-            label10.TabIndex = 4;
-            label10.Text = "Địa chỉ";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            label9.Location = new Point(447, 1);
-            label9.Name = "label9";
-            label9.RightToLeft = RightToLeft.No;
-            label9.Size = new Size(108, 53);
-            label9.TabIndex = 3;
-            label9.Text = "Số điện thoại";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            label7.Location = new Point(92, 1);
-            label7.Name = "label7";
-            label7.RightToLeft = RightToLeft.No;
-            label7.Size = new Size(169, 53);
-            label7.TabIndex = 1;
-            label7.Text = "Họ và tên";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            label6.Location = new Point(4, 1);
-            label6.Name = "label6";
-            label6.RightToLeft = RightToLeft.No;
-            label6.Size = new Size(81, 53);
-            label6.TabIndex = 0;
-            label6.Text = "Mã nhân viên";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            label8.Location = new Point(268, 1);
-            label8.Name = "label8";
-            label8.RightToLeft = RightToLeft.No;
-            label8.Size = new Size(172, 53);
-            label8.TabIndex = 2;
-            label8.Text = "Email";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnSearch
             // 
             btnSearch.BackColor = Color.FromArgb(0, 102, 104);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(814, 24);
+            btnSearch.Location = new Point(10, 19);
+            btnSearch.Margin = new Padding(2);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(126, 42);
+            btnSearch.Size = new Size(101, 34);
             btnSearch.TabIndex = 2;
             btnSearch.Text = "Tìm kiếm";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(288, 30);
+            txtSearch.Location = new Point(115, 23);
+            txtSearch.Margin = new Padding(2);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(476, 31);
+            txtSearch.Size = new Size(649, 27);
             txtSearch.TabIndex = 1;
-            // 
-            // ListSearch
-            // 
-            ListSearch.BackColor = Color.FromArgb(0, 102, 104);
-            ListSearch.ForeColor = Color.White;
-            ListSearch.FormattingEnabled = true;
-            ListSearch.Items.AddRange(new object[] { "Mã nhân viên", "Họ và tên", "Email", "Số điện thoại", "Địa chỉ ", "Ngày sinh ", "Chức vụ" });
-            ListSearch.Location = new Point(48, 30);
-            ListSearch.Name = "ListSearch";
-            ListSearch.Size = new Size(182, 33);
-            ListSearch.TabIndex = 0;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // FormNhanvien
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(992, 673);
+            ClientSize = new Size(788, 538);
             Controls.Add(panel7);
+            Margin = new Padding(2);
             Name = "FormNhanvien";
             Text = "FormMain";
+            Load += FormNhanvien_Load;
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)tbEmployee).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
-            tbEmployee.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -454,25 +422,13 @@
         private Panel panel7;
         private Button btnSearch;
         private TextBox txtSearch;
-        private ComboBox ListSearch;
-        private TableLayoutPanel tbEmployee;
-        private Label label8;
-        private Label label7;
-        private Label label6;
         private Panel panel8;
         private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label19;
         private Label label18;
         private Label label17;
         private Label label16;
         private Label label15;
         private Label label14;
-        private TextBox txtRole;
-        private TextBox txtDateofBirth;
         private TextBox txtAddress;
         private TextBox txtPhone;
         private TextBox txtEmail;
@@ -485,5 +441,15 @@
         private Button btnUpdate;
         private Button btnAdd;
         private Button btnBack;
+        private DataGridView tbEmployee;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn employee_id;
+        private DataGridViewTextBoxColumn full_name;
+        private DataGridViewTextBoxColumn email;
+        private DataGridViewTextBoxColumn phone_number;
+        private DataGridViewTextBoxColumn address;
+        private DataGridViewTextBoxColumn date_of_birth;
+        private DataGridViewTextBoxColumn role_id;
+        private DateTimePicker dtpDateofBirth;
     }
 }
