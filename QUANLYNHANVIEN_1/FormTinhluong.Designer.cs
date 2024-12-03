@@ -45,7 +45,7 @@
             label2 = new Label();
             label1 = new Label();
             label13 = new Label();
-            dataGridView1 = new DataGridView();
+            jtbTinhLuong = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -54,7 +54,7 @@
             Column6 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)jtbTinhLuong).BeginInit();
             SuspendLayout();
             // 
             // ListSearch
@@ -63,25 +63,28 @@
             ListSearch.ForeColor = Color.White;
             ListSearch.FormattingEnabled = true;
             ListSearch.Items.AddRange(new object[] { "STT", "Mã nhân viên", "Tháng", "Ngày nghỉ", "Lương cơ bản", "Thưởng", "Lương tổng" });
-            ListSearch.Location = new Point(43, 29);
+            ListSearch.Location = new Point(34, 23);
+            ListSearch.Margin = new Padding(2, 2, 2, 2);
             ListSearch.Name = "ListSearch";
-            ListSearch.Size = new Size(182, 33);
+            ListSearch.Size = new Size(146, 28);
             ListSearch.TabIndex = 2;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(289, 31);
+            txtSearch.Location = new Point(231, 25);
+            txtSearch.Margin = new Padding(2, 2, 2, 2);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(476, 31);
+            txtSearch.Size = new Size(382, 27);
             txtSearch.TabIndex = 3;
             // 
             // btnSearch
             // 
             btnSearch.BackColor = Color.FromArgb(0, 102, 104);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(816, 25);
+            btnSearch.Location = new Point(727, 17);
+            btnSearch.Margin = new Padding(2, 2, 2, 2);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(126, 42);
+            btnSearch.Size = new Size(101, 34);
             btnSearch.TabIndex = 4;
             btnSearch.Text = "Tìm kiếm";
             btnSearch.UseVisualStyleBackColor = false;
@@ -102,17 +105,19 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label13);
-            panel1.Location = new Point(1, 361);
+            panel1.Location = new Point(1, 289);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(996, 250);
+            panel1.Size = new Size(886, 200);
             panel1.TabIndex = 6;
             // 
             // btnBack
             // 
             btnBack.ForeColor = Color.FromArgb(0, 102, 104);
-            btnBack.Location = new Point(877, 195);
+            btnBack.Location = new Point(720, 66);
+            btnBack.Margin = new Padding(2, 2, 2, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(95, 34);
+            btnBack.Size = new Size(76, 27);
             btnBack.TabIndex = 16;
             btnBack.Text = "Quay lại";
             btnBack.UseVisualStyleBackColor = true;
@@ -121,9 +126,10 @@
             // btnLoad
             // 
             btnLoad.ForeColor = Color.FromArgb(0, 102, 104);
-            btnLoad.Location = new Point(716, 195);
+            btnLoad.Location = new Point(720, 16);
+            btnLoad.Margin = new Padding(2, 2, 2, 2);
             btnLoad.Name = "btnLoad";
-            btnLoad.Size = new Size(134, 34);
+            btnLoad.Size = new Size(107, 27);
             btnLoad.TabIndex = 15;
             btnLoad.Text = "Làm mới";
             btnLoad.UseVisualStyleBackColor = true;
@@ -131,9 +137,10 @@
             // btnDelete
             // 
             btnDelete.ForeColor = Color.FromArgb(0, 102, 104);
-            btnDelete.Location = new Point(716, 132);
+            btnDelete.Location = new Point(573, 106);
+            btnDelete.Margin = new Padding(2, 2, 2, 2);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(134, 34);
+            btnDelete.Size = new Size(107, 27);
             btnDelete.TabIndex = 14;
             btnDelete.Text = "Xóa";
             btnDelete.UseVisualStyleBackColor = true;
@@ -141,9 +148,10 @@
             // btnOuput
             // 
             btnOuput.ForeColor = Color.FromArgb(0, 102, 104);
-            btnOuput.Location = new Point(716, 77);
+            btnOuput.Location = new Point(573, 62);
+            btnOuput.Margin = new Padding(2, 2, 2, 2);
             btnOuput.Name = "btnOuput";
-            btnOuput.Size = new Size(134, 34);
+            btnOuput.Size = new Size(107, 27);
             btnOuput.TabIndex = 13;
             btnOuput.Text = "Xuất EXEL";
             btnOuput.UseVisualStyleBackColor = true;
@@ -151,48 +159,54 @@
             // btbTinhluong
             // 
             btbTinhluong.ForeColor = Color.FromArgb(0, 102, 104);
-            btbTinhluong.Location = new Point(716, 19);
+            btbTinhluong.Location = new Point(573, 15);
+            btbTinhluong.Margin = new Padding(2, 2, 2, 2);
             btbTinhluong.Name = "btbTinhluong";
-            btbTinhluong.Size = new Size(134, 34);
+            btbTinhluong.Size = new Size(107, 27);
             btbTinhluong.TabIndex = 12;
             btbTinhluong.Text = "Tính lương";
             btbTinhluong.UseVisualStyleBackColor = true;
             // 
             // txtID
             // 
-            txtID.Location = new Point(196, 21);
+            txtID.Location = new Point(157, 17);
+            txtID.Margin = new Padding(2, 2, 2, 2);
             txtID.Name = "txtID";
-            txtID.Size = new Size(454, 31);
+            txtID.Size = new Size(364, 27);
             txtID.TabIndex = 8;
             // 
             // txtMonth
             // 
-            txtMonth.Location = new Point(196, 79);
+            txtMonth.Location = new Point(157, 63);
+            txtMonth.Margin = new Padding(2, 2, 2, 2);
             txtMonth.Name = "txtMonth";
-            txtMonth.Size = new Size(454, 31);
+            txtMonth.Size = new Size(364, 27);
             txtMonth.TabIndex = 7;
             // 
             // txtBonus
             // 
-            txtBonus.Location = new Point(196, 197);
+            txtBonus.Location = new Point(157, 158);
+            txtBonus.Margin = new Padding(2, 2, 2, 2);
             txtBonus.Name = "txtBonus";
-            txtBonus.Size = new Size(454, 31);
+            txtBonus.Size = new Size(364, 27);
             txtBonus.TabIndex = 6;
             // 
             // txtBaseSalary
             // 
-            txtBaseSalary.Location = new Point(196, 134);
+            txtBaseSalary.Location = new Point(157, 107);
+            txtBaseSalary.Margin = new Padding(2, 2, 2, 2);
             txtBaseSalary.Name = "txtBaseSalary";
-            txtBaseSalary.Size = new Size(454, 31);
+            txtBaseSalary.Size = new Size(364, 27);
             txtBaseSalary.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(42, 200);
+            label3.Location = new Point(34, 160);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(74, 25);
+            label3.Size = new Size(60, 20);
             label3.TabIndex = 4;
             label3.Text = "Thưởng";
             // 
@@ -200,9 +214,10 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(42, 137);
+            label2.Location = new Point(34, 110);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(122, 25);
+            label2.Size = new Size(100, 20);
             label2.TabIndex = 3;
             label2.Text = "Lương cơ bản";
             // 
@@ -210,9 +225,10 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(42, 82);
+            label1.Location = new Point(34, 66);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(61, 25);
+            label1.Size = new Size(50, 20);
             label1.TabIndex = 2;
             label1.Text = "Tháng";
             // 
@@ -220,21 +236,23 @@
             // 
             label13.AutoSize = true;
             label13.ForeColor = Color.White;
-            label13.Location = new Point(42, 24);
+            label13.Location = new Point(34, 19);
+            label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(118, 25);
+            label13.Size = new Size(97, 20);
             label13.TabIndex = 1;
             label13.Text = "Mã nhân viên";
             // 
-            // dataGridView1
+            // jtbTinhLuong
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
-            dataGridView1.Location = new Point(29, 96);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(933, 225);
-            dataGridView1.TabIndex = 7;
+            jtbTinhLuong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            jtbTinhLuong.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
+            jtbTinhLuong.Location = new Point(11, 77);
+            jtbTinhLuong.Margin = new Padding(2, 2, 2, 2);
+            jtbTinhLuong.Name = "jtbTinhLuong";
+            jtbTinhLuong.RowHeadersWidth = 62;
+            jtbTinhLuong.Size = new Size(876, 180);
+            jtbTinhLuong.TabIndex = 7;
             // 
             // Column1
             // 
@@ -249,7 +267,7 @@
             Column2.HeaderText = "Mã nhân viên";
             Column2.MinimumWidth = 8;
             Column2.Name = "Column2";
-            Column2.Width = 154;
+            Column2.Width = 126;
             // 
             // Column3
             // 
@@ -271,7 +289,7 @@
             Column5.HeaderText = "Lương cơ bản";
             Column5.MinimumWidth = 8;
             Column5.Name = "Column5";
-            Column5.Width = 158;
+            Column5.Width = 129;
             // 
             // Column6
             // 
@@ -289,20 +307,21 @@
             // 
             // FormTinhluong
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(994, 609);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(886, 487);
+            Controls.Add(jtbTinhLuong);
             Controls.Add(panel1);
             Controls.Add(btnSearch);
             Controls.Add(txtSearch);
             Controls.Add(ListSearch);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FormTinhluong";
             Text = "FormTinhluong";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)jtbTinhLuong).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -326,7 +345,7 @@
         private Button btbTinhluong;
         private Button btnLoad;
         private Button btnBack;
-        private DataGridView dataGridView1;
+        private DataGridView jtbTinhLuong;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;

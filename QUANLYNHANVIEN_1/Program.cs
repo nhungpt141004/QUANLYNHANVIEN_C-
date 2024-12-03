@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace QUANLYNHANVIEN_1
@@ -13,7 +14,7 @@ namespace QUANLYNHANVIEN_1
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Tạo form chính là FormLogin
-            FormRegister formLogin = new FormRegister();
+            FormChamcong formLogin = new FormChamcong();
 
             // Đảm bảo thoát ứng dụng khi FormLogin đóng
             formLogin.FormClosing += (sender, e) =>
@@ -22,7 +23,17 @@ namespace QUANLYNHANVIEN_1
             };
 
             // Chạy ứng dụng
-            Application.Run(formLogin);
+            try
+            {
+                Application.Run(formLogin);
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ nếu có
+                MessageBox.Show($"Lỗi khi khởi chạy ứng dụng: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Debug.WriteLine($"Error occurred while running the application: {ex.Message}");
+            }
+
         }
     }
 }
