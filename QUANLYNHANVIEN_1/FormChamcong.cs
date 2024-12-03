@@ -23,5 +23,6 @@ namespace QUANLYNHANVIEN_1
             FormMain.Show();
             this.Hide();
         }
+
     }
 }

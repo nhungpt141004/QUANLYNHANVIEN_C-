@@ -1,26 +1,28 @@
-﻿using QUANLYNHANVIEN_1.database;
+﻿using System;
+using System.Windows.Forms;
 
 namespace QUANLYNHANVIEN_1
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            //DatabaseConnection dbConnection = new DatabaseConnection();
+            // Khởi tạo giao diện ứng dụng
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
 
-            //// Mở kết nối
-            //dbConnection.OpenConnection();
+            // Tạo form chính là FormLogin
+            FormRegister formLogin = new FormRegister();
 
-            //// Đóng kết nối
-            //dbConnection.CloseConnection();
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new FormMain1());
+            // Đảm bảo thoát ứng dụng khi FormLogin đóng
+            formLogin.FormClosing += (sender, e) =>
+            {
+                Application.Exit();
+            };
+
+            // Chạy ứng dụng
+            Application.Run(formLogin);
         }
     }
 }

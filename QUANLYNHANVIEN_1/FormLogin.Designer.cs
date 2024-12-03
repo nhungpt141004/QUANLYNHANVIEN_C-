@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             panel1 = new Panel();
-            btnRegister = new Button();
-            btnLogin = new Button();
-            txtCheckpass = new CheckBox();
-            txtPassword = new TextBox();
-            txtUser = new TextBox();
+            jbtDangKy = new Button();
+            btnDNhap = new Button();
+            jcbAnHienMatKhau = new CheckBox();
+            jtfMatKhau = new TextBox();
+            jtfTaiKhoan = new TextBox();
             label7 = new Label();
             label6 = new Label();
             panel2 = new Panel();
@@ -49,72 +49,74 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(btnRegister);
-            panel1.Controls.Add(btnLogin);
-            panel1.Controls.Add(txtCheckpass);
-            panel1.Controls.Add(txtPassword);
-            panel1.Controls.Add(txtUser);
+            panel1.Controls.Add(jbtDangKy);
+            panel1.Controls.Add(btnDNhap);
+            panel1.Controls.Add(jcbAnHienMatKhau);
+            panel1.Controls.Add(jtfMatKhau);
+            panel1.Controls.Add(jtfTaiKhoan);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(panel2);
             panel1.Location = new Point(-3, 1);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(658, 369);
             panel1.TabIndex = 0;
             // 
-            // btnRegister
+            // jbtDangKy
             // 
-            btnRegister.BackColor = Color.FromArgb(0, 102, 104);
-            btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(98, 290);
-            btnRegister.Margin = new Padding(2, 2, 2, 2);
-            btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(110, 42);
-            btnRegister.TabIndex = 15;
-            btnRegister.Text = "Đăng ký";
-            btnRegister.UseVisualStyleBackColor = false;
-            btnRegister.Click += btnRegister_Click;
+            jbtDangKy.BackColor = Color.FromArgb(0, 102, 104);
+            jbtDangKy.ForeColor = Color.White;
+            jbtDangKy.Location = new Point(98, 290);
+            jbtDangKy.Margin = new Padding(2);
+            jbtDangKy.Name = "jbtDangKy";
+            jbtDangKy.Size = new Size(110, 42);
+            jbtDangKy.TabIndex = 15;
+            jbtDangKy.Text = "Đăng ký";
+            jbtDangKy.UseVisualStyleBackColor = false;
+            jbtDangKy.Click += btnRegister_Click;
             // 
-            // btnLogin
+            // btnDNhap
             // 
-            btnLogin.BackColor = Color.FromArgb(0, 102, 104);
-            btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(462, 290);
-            btnLogin.Margin = new Padding(2, 2, 2, 2);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(110, 42);
-            btnLogin.TabIndex = 14;
-            btnLogin.Text = "Đăng nhập";
-            btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += btnLogin_Click;
+            btnDNhap.BackColor = Color.FromArgb(0, 102, 104);
+            btnDNhap.ForeColor = Color.White;
+            btnDNhap.Location = new Point(462, 290);
+            btnDNhap.Margin = new Padding(2);
+            btnDNhap.Name = "btnDNhap";
+            btnDNhap.Size = new Size(110, 42);
+            btnDNhap.TabIndex = 14;
+            btnDNhap.Text = "Đăng nhập";
+            btnDNhap.UseVisualStyleBackColor = false;
+            btnDNhap.Click += btnLogin_Click;
             // 
-            // txtCheckpass
+            // jcbAnHienMatKhau
             // 
-            txtCheckpass.AutoSize = true;
-            txtCheckpass.Location = new Point(542, 218);
-            txtCheckpass.Margin = new Padding(2, 2, 2, 2);
-            txtCheckpass.Name = "txtCheckpass";
-            txtCheckpass.Size = new Size(87, 24);
-            txtCheckpass.TabIndex = 13;
-            txtCheckpass.Text = "Hiển thị ";
-            txtCheckpass.UseVisualStyleBackColor = true;
+            jcbAnHienMatKhau.AutoSize = true;
+            jcbAnHienMatKhau.Location = new Point(542, 218);
+            jcbAnHienMatKhau.Margin = new Padding(2);
+            jcbAnHienMatKhau.Name = "jcbAnHienMatKhau";
+            jcbAnHienMatKhau.Size = new Size(87, 24);
+            jcbAnHienMatKhau.TabIndex = 13;
+            jcbAnHienMatKhau.Text = "Hiển thị ";
+            jcbAnHienMatKhau.UseVisualStyleBackColor = true;
+            jcbAnHienMatKhau.CheckedChanged += jcbAnHienMatKhau_CheckedChanged;
             // 
-            // txtPassword
+            // jtfMatKhau
             // 
-            txtPassword.Location = new Point(174, 217);
-            txtPassword.Margin = new Padding(2, 2, 2, 2);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(329, 27);
-            txtPassword.TabIndex = 10;
+            jtfMatKhau.Location = new Point(174, 217);
+            jtfMatKhau.Margin = new Padding(2);
+            jtfMatKhau.Name = "jtfMatKhau";
+            jtfMatKhau.Size = new Size(329, 27);
+            jtfMatKhau.TabIndex = 10;
+            jtfMatKhau.UseSystemPasswordChar = true;
             // 
-            // txtUser
+            // jtfTaiKhoan
             // 
-            txtUser.Location = new Point(174, 156);
-            txtUser.Margin = new Padding(2, 2, 2, 2);
-            txtUser.Name = "txtUser";
-            txtUser.Size = new Size(329, 27);
-            txtUser.TabIndex = 9;
+            jtfTaiKhoan.Location = new Point(174, 156);
+            jtfTaiKhoan.Margin = new Padding(2);
+            jtfTaiKhoan.Name = "jtfTaiKhoan";
+            jtfTaiKhoan.Size = new Size(329, 27);
+            jtfTaiKhoan.TabIndex = 9;
             // 
             // label7
             // 
@@ -147,7 +149,7 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(pictureBox1);
             panel2.Location = new Point(6, 0);
-            panel2.Margin = new Padding(2, 2, 2, 2);
+            panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
             panel2.Size = new Size(652, 126);
             panel2.TabIndex = 1;
@@ -180,7 +182,7 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.Location = new Point(17, 16);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(169, 93);
             pictureBox1.TabIndex = 0;
@@ -192,7 +194,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(654, 366);
             Controls.Add(panel1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormLogin";
             Text = "FormLogin";
             panel1.ResumeLayout(false);
@@ -212,10 +214,10 @@
         private PictureBox pictureBox1;
         private Label label6;
         private Label label7;
-        private TextBox txtUser;
-        private TextBox txtPassword;
-        private CheckBox txtCheckpass;
-        private Button btnLogin;
-        private Button btnRegister;
+        private TextBox jtfTaiKhoan;
+        private CheckBox jcbAnHienMatKhau;
+        private Button btnDNhap;
+        private Button jbtDangKy;
+        private TextBox jtfMatKhau;
     }
 }

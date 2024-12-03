@@ -6,7 +6,7 @@ namespace QUANLYNHANVIEN_1.database
     internal class DatabaseConnection
     {
         // Chuỗi kết nối
-        private string connectionString = "Server=localhost;Database=quan_ly_nhan_vien;Uid=root;Pwd=123456;";
+        private string connectionString = "Server=localhost;Port=3306;Database=quan_ly_nhan_vien;Uid=root;Pwd=123456789;";
 
         // Kết nối MySQL
         private MySqlConnection connection;
@@ -25,12 +25,12 @@ namespace QUANLYNHANVIEN_1.database
                 if (connection.State == System.Data.ConnectionState.Closed)
                 {
                     connection.Open();
-                    Console.WriteLine("Kết nối thành công!");
                 }
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine("Lỗi kết nối: " + ex.Message);
+                Console.WriteLine("Stack Trace: " + ex.StackTrace);
             }
         }
 
@@ -42,18 +42,22 @@ namespace QUANLYNHANVIEN_1.database
                 if (connection.State == System.Data.ConnectionState.Open)
                 {
                     connection.Close();
-                    Console.WriteLine("Kết nối đã đóng.");
                 }
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine("Lỗi khi đóng kết nối: " + ex.Message);
+                Console.WriteLine("Stack Trace: " + ex.StackTrace);
             }
         }
 
         // Lấy kết nối (nếu cần dùng ở các lớp khác)
         public MySqlConnection GetConnection()
         {
+            if (connection.State == System.Data.ConnectionState.Closed)
+            {
+                OpenConnection();
+            }
             return connection;
         }
     }

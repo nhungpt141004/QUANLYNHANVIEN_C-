@@ -35,13 +35,6 @@ namespace QUANLYNHANVIEN_1
             this.Hide();
         }
 
-        private void btnThongtin_Click(object sender, EventArgs e)
-        {
-            FormThongtin FormThongtin = new FormThongtin();
-            FormThongtin.Show();
-            this.Hide();
-        }
-
         private void btnDangxuat_Click(object sender, EventArgs e)
         {
             FormLogin form = new FormLogin();
@@ -53,5 +46,7 @@ namespace QUANLYNHANVIEN_1
         {
 
         }
+
+
     }
 }
