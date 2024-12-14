@@ -14,7 +14,7 @@ namespace QUANLYNHANVIEN_1
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Tạo form chính là FormLogin
-            FormChamcong formLogin = new FormChamcong();
+            FormLogin formLogin = new FormLogin();
 
             // Đảm bảo thoát ứng dụng khi FormLogin đóng
             formLogin.FormClosing += (sender, e) =>

@@ -26,28 +26,28 @@ namespace QUANLYNHANVIEN_1
         private void btnEmployee_Click(object sender, EventArgs e)
         {
             FormNhanvien formNhanvien = new FormNhanvien();
-            formNhanvien.ShowDialog();
+            formNhanvien.Show();
             this.Hide();
         }
 
         private void btnChamcong_Click(object sender, EventArgs e)
         {
             FormChamcong formChamcong = new FormChamcong();
-            formChamcong.ShowDialog();
+            formChamcong.Show();
             this.Hide();
         }
 
         private void btnThongtin_Click(object sender, EventArgs e)
         {
             About formAbout = new About();
-            formAbout.ShowDialog();
+            formAbout.Show();
             this.Hide();
         }
 
         private void btnTinhluong_Click(object sender, EventArgs e)
         {
             FormTinhluong formtinhluong= new FormTinhluong();
-            formtinhluong.ShowDialog();
+            formtinhluong.Show();
             this.Hide();
         }
 

@@ -24,7 +24,7 @@ namespace QUANLYNHANVIEN_1
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            FormNhanvien FormMain = new FormNhanvien();
+            FormMain1 FormMain = new FormMain1();
             FormMain.Show();
             this.Hide();
         }
@@ -157,10 +157,10 @@ namespace QUANLYNHANVIEN_1
             List<Dictionary<string, object>> detailedAttendance = new List<Dictionary<string, object>>();
 
             string sql = @"
-    SELECT employee_id, DATE_FORMAT(day, '%d/%m/%Y') AS day, status 
-    FROM attendances 
-    WHERE employee_id = @employeeId AND DATE_FORMAT(day, '%m/%Y') = @monthYear 
-    ORDER BY day";
+            SELECT employee_id, DATE_FORMAT(day, '%d/%m/%Y') AS day, status 
+             FROM attendances 
+            WHERE employee_id = @employeeId AND DATE_FORMAT(day, '%m/%Y') = @monthYear 
+             ORDER BY day";
 
             try
             {

@@ -186,9 +186,9 @@ namespace QUANLYNHANVIEN_1
 
                 // Câu lệnh SQL SELECT với JOIN giữa employees và accounts
                 string query = @"
-            SELECT e.employee_id, e.full_name, e.email, e.phone_number, e.address, e.date_of_birth, a.role_id 
-            FROM employees e 
-            LEFT JOIN accounts a ON e.employee_id = a.employee_id";
+                    SELECT e.employee_id, e.full_name, e.email, e.phone_number, e.address, e.date_of_birth, a.role_id 
+                    FROM employees e 
+                     LEFT JOIN accounts a ON e.employee_id = a.employee_id";
 
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, db.GetConnection());
                 DataTable dataTable = new DataTable();
@@ -582,7 +582,7 @@ namespace QUANLYNHANVIEN_1
         private void btnBack_Click(object sender, EventArgs e)
         {
             FormMain1 formMain1 = new FormMain1();
-            formMain1.ShowDialog();
+            formMain1.Show();
             this.Hide();
         }
     }

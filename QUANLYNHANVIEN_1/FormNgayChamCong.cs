@@ -237,6 +237,10 @@ namespace QUANLYNHANVIEN_1
                     // Cập nhật bảng salaries sau khi lưu trạng thái chấm công
                     string monthYear = $"{month}/{year}";
                     InsertIntoSalary(this.employeeId, monthYear);
+                    //if (salaryViews != null)
+                    //{
+                    //    salaryViews.UpdateDayOff(this.employeeId, monthYear);
+                    //}
 
                     MessageBox.Show("Đã lưu trạng thái chấm công cho nhân viên " + this.employeeId + " thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

@@ -45,16 +45,16 @@
             label2 = new Label();
             label1 = new Label();
             label13 = new Label();
-            jtbTinhLuong = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
+            jtbLuong = new DataGridView();
+            STT = new DataGridViewTextBoxColumn();
+            ID = new DataGridViewTextBoxColumn();
+            Month = new DataGridViewTextBoxColumn();
+            BaseSalary = new DataGridViewTextBoxColumn();
+            DayOff = new DataGridViewTextBoxColumn();
+            Bonus = new DataGridViewTextBoxColumn();
+            NetSalary = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)jtbTinhLuong).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)jtbLuong).BeginInit();
             SuspendLayout();
             // 
             // ListSearch
@@ -64,7 +64,7 @@
             ListSearch.FormattingEnabled = true;
             ListSearch.Items.AddRange(new object[] { "STT", "Mã nhân viên", "Tháng", "Ngày nghỉ", "Lương cơ bản", "Thưởng", "Lương tổng" });
             ListSearch.Location = new Point(34, 23);
-            ListSearch.Margin = new Padding(2, 2, 2, 2);
+            ListSearch.Margin = new Padding(2);
             ListSearch.Name = "ListSearch";
             ListSearch.Size = new Size(146, 28);
             ListSearch.TabIndex = 2;
@@ -72,7 +72,7 @@
             // txtSearch
             // 
             txtSearch.Location = new Point(231, 25);
-            txtSearch.Margin = new Padding(2, 2, 2, 2);
+            txtSearch.Margin = new Padding(2);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(382, 27);
             txtSearch.TabIndex = 3;
@@ -82,7 +82,7 @@
             btnSearch.BackColor = Color.FromArgb(0, 102, 104);
             btnSearch.ForeColor = Color.White;
             btnSearch.Location = new Point(727, 17);
-            btnSearch.Margin = new Padding(2, 2, 2, 2);
+            btnSearch.Margin = new Padding(2);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(101, 34);
             btnSearch.TabIndex = 4;
@@ -106,7 +106,7 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label13);
             panel1.Location = new Point(1, 289);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(886, 200);
             panel1.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             btnBack.ForeColor = Color.FromArgb(0, 102, 104);
             btnBack.Location = new Point(720, 66);
-            btnBack.Margin = new Padding(2, 2, 2, 2);
+            btnBack.Margin = new Padding(2);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(76, 27);
             btnBack.TabIndex = 16;
@@ -127,50 +127,54 @@
             // 
             btnLoad.ForeColor = Color.FromArgb(0, 102, 104);
             btnLoad.Location = new Point(720, 16);
-            btnLoad.Margin = new Padding(2, 2, 2, 2);
+            btnLoad.Margin = new Padding(2);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(107, 27);
             btnLoad.TabIndex = 15;
             btnLoad.Text = "Làm mới";
             btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
             // 
             // btnDelete
             // 
             btnDelete.ForeColor = Color.FromArgb(0, 102, 104);
             btnDelete.Location = new Point(573, 106);
-            btnDelete.Margin = new Padding(2, 2, 2, 2);
+            btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(107, 27);
             btnDelete.TabIndex = 14;
             btnDelete.Text = "Xóa";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnOuput
             // 
             btnOuput.ForeColor = Color.FromArgb(0, 102, 104);
             btnOuput.Location = new Point(573, 62);
-            btnOuput.Margin = new Padding(2, 2, 2, 2);
+            btnOuput.Margin = new Padding(2);
             btnOuput.Name = "btnOuput";
             btnOuput.Size = new Size(107, 27);
             btnOuput.TabIndex = 13;
             btnOuput.Text = "Xuất EXEL";
             btnOuput.UseVisualStyleBackColor = true;
+            btnOuput.Click += btnOuput_Click;
             // 
             // btbTinhluong
             // 
             btbTinhluong.ForeColor = Color.FromArgb(0, 102, 104);
             btbTinhluong.Location = new Point(573, 15);
-            btbTinhluong.Margin = new Padding(2, 2, 2, 2);
+            btbTinhluong.Margin = new Padding(2);
             btbTinhluong.Name = "btbTinhluong";
             btbTinhluong.Size = new Size(107, 27);
             btbTinhluong.TabIndex = 12;
             btbTinhluong.Text = "Tính lương";
             btbTinhluong.UseVisualStyleBackColor = true;
+            btbTinhluong.Click += btbTinhluong_Click;
             // 
             // txtID
             // 
             txtID.Location = new Point(157, 17);
-            txtID.Margin = new Padding(2, 2, 2, 2);
+            txtID.Margin = new Padding(2);
             txtID.Name = "txtID";
             txtID.Size = new Size(364, 27);
             txtID.TabIndex = 8;
@@ -178,7 +182,7 @@
             // txtMonth
             // 
             txtMonth.Location = new Point(157, 63);
-            txtMonth.Margin = new Padding(2, 2, 2, 2);
+            txtMonth.Margin = new Padding(2);
             txtMonth.Name = "txtMonth";
             txtMonth.Size = new Size(364, 27);
             txtMonth.TabIndex = 7;
@@ -186,7 +190,7 @@
             // txtBonus
             // 
             txtBonus.Location = new Point(157, 158);
-            txtBonus.Margin = new Padding(2, 2, 2, 2);
+            txtBonus.Margin = new Padding(2);
             txtBonus.Name = "txtBonus";
             txtBonus.Size = new Size(364, 27);
             txtBonus.TabIndex = 6;
@@ -194,7 +198,7 @@
             // txtBaseSalary
             // 
             txtBaseSalary.Location = new Point(157, 107);
-            txtBaseSalary.Margin = new Padding(2, 2, 2, 2);
+            txtBaseSalary.Margin = new Padding(2);
             txtBaseSalary.Name = "txtBaseSalary";
             txtBaseSalary.Size = new Size(364, 27);
             txtBaseSalary.TabIndex = 5;
@@ -243,67 +247,77 @@
             label13.TabIndex = 1;
             label13.Text = "Mã nhân viên";
             // 
-            // jtbTinhLuong
+            // jtbLuong
             // 
-            jtbTinhLuong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            jtbTinhLuong.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
-            jtbTinhLuong.Location = new Point(11, 77);
-            jtbTinhLuong.Margin = new Padding(2, 2, 2, 2);
-            jtbTinhLuong.Name = "jtbTinhLuong";
-            jtbTinhLuong.RowHeadersWidth = 62;
-            jtbTinhLuong.Size = new Size(876, 180);
-            jtbTinhLuong.TabIndex = 7;
+            jtbLuong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            jtbLuong.Columns.AddRange(new DataGridViewColumn[] { STT, ID, Month, BaseSalary, DayOff, Bonus, NetSalary });
+            jtbLuong.Location = new Point(12, 78);
+            jtbLuong.Name = "jtbLuong";
+            jtbLuong.RowHeadersWidth = 51;
+            jtbLuong.Size = new Size(785, 188);
+            jtbLuong.TabIndex = 7;
             // 
-            // Column1
+            // STT
             // 
-            Column1.HeaderText = "STT";
-            Column1.MinimumWidth = 8;
-            Column1.Name = "Column1";
-            Column1.Width = 50;
+            STT.HeaderText = "STT";
+            STT.MinimumWidth = 6;
+            STT.Name = "STT";
+            STT.ReadOnly = true;
+            STT.Resizable = DataGridViewTriState.False;
+            STT.Width = 50;
             // 
-            // Column2
+            // ID
             // 
-            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-            Column2.HeaderText = "Mã nhân viên";
-            Column2.MinimumWidth = 8;
-            Column2.Name = "Column2";
-            Column2.Width = 126;
+            ID.HeaderText = "Mã Nhân Viên";
+            ID.MinimumWidth = 6;
+            ID.Name = "ID";
+            ID.ReadOnly = true;
+            ID.Resizable = DataGridViewTriState.False;
+            ID.Width = 50;
             // 
-            // Column3
+            // Month
             // 
-            Column3.HeaderText = "Tháng";
-            Column3.MinimumWidth = 8;
-            Column3.Name = "Column3";
-            Column3.Width = 80;
+            Month.HeaderText = "Tháng";
+            Month.MinimumWidth = 6;
+            Month.Name = "Month";
+            Month.ReadOnly = true;
+            Month.Resizable = DataGridViewTriState.False;
             // 
-            // Column4
+            // BaseSalary
             // 
-            Column4.HeaderText = "Ngày nghỉ";
-            Column4.MinimumWidth = 8;
-            Column4.Name = "Column4";
-            Column4.Width = 130;
+            BaseSalary.HeaderText = "Lương gốc";
+            BaseSalary.MinimumWidth = 6;
+            BaseSalary.Name = "BaseSalary";
+            BaseSalary.ReadOnly = true;
+            BaseSalary.Resizable = DataGridViewTriState.False;
+            BaseSalary.Width = 125;
             // 
-            // Column5
+            // DayOff
             // 
-            Column5.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            Column5.HeaderText = "Lương cơ bản";
-            Column5.MinimumWidth = 8;
-            Column5.Name = "Column5";
-            Column5.Width = 129;
+            DayOff.HeaderText = "Ngày Nghỉ";
+            DayOff.MinimumWidth = 6;
+            DayOff.Name = "DayOff";
+            DayOff.ReadOnly = true;
+            DayOff.Resizable = DataGridViewTriState.False;
+            DayOff.Width = 125;
             // 
-            // Column6
+            // Bonus
             // 
-            Column6.HeaderText = "Thưởng";
-            Column6.MinimumWidth = 8;
-            Column6.Name = "Column6";
-            Column6.Width = 150;
+            Bonus.HeaderText = "Lương thưởng";
+            Bonus.MinimumWidth = 6;
+            Bonus.Name = "Bonus";
+            Bonus.ReadOnly = true;
+            Bonus.Resizable = DataGridViewTriState.False;
+            Bonus.Width = 125;
             // 
-            // Column7
+            // NetSalary
             // 
-            Column7.HeaderText = "Tổng lương";
-            Column7.MinimumWidth = 8;
-            Column7.Name = "Column7";
-            Column7.Width = 150;
+            NetSalary.HeaderText = "Lương Chính Thức";
+            NetSalary.MinimumWidth = 6;
+            NetSalary.Name = "NetSalary";
+            NetSalary.ReadOnly = true;
+            NetSalary.Resizable = DataGridViewTriState.False;
+            NetSalary.Width = 125;
             // 
             // FormTinhluong
             // 
@@ -311,17 +325,17 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(886, 487);
-            Controls.Add(jtbTinhLuong);
+            Controls.Add(jtbLuong);
             Controls.Add(panel1);
             Controls.Add(btnSearch);
             Controls.Add(txtSearch);
             Controls.Add(ListSearch);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormTinhluong";
             Text = "FormTinhluong";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)jtbTinhLuong).EndInit();
+            ((System.ComponentModel.ISupportInitialize)jtbLuong).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -345,13 +359,13 @@
         private Button btbTinhluong;
         private Button btnLoad;
         private Button btnBack;
-        private DataGridView jtbTinhLuong;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
+        private DataGridView jtbLuong;
+        private DataGridViewTextBoxColumn STT;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn Month;
+        private DataGridViewTextBoxColumn BaseSalary;
+        private DataGridViewTextBoxColumn DayOff;
+        private DataGridViewTextBoxColumn Bonus;
+        private DataGridViewTextBoxColumn NetSalary;
     }
 }
